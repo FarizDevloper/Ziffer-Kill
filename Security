@@ -1,0 +1,26 @@
+## Security
+
+We take security seriously and recommend the following best practices:
+
+### 🔐 Secure Credentials
+- Never hardcode sensitive information such as passwords, tokens, or API keys directly in your code. Use environment variables or external configuration files to store sensitive data securely.
+- For Telegram Bot API tokens, make sure they are stored safely, and only share them with trusted parties.
+- If using a public repository, **never** expose sensitive credentials or keys in your commits. Use `.gitignore` to ignore configuration files that may contain sensitive data.
+
+### 🌐 HTTPS Communication
+- Ensure all sensitive communication (such as the Telegram Bot API requests) is done over HTTPS to prevent any interception of data.
+- Use SSL/TLS certificates to protect your server’s communication channels and ensure that data is encrypted in transit.
+
+### 📡 Network Security
+- Use a strong and unique Wi-Fi password for devices connecting to your local network.
+- If your device is accessible over the internet, implement firewalls, VPNs, or other security layers to restrict access and monitor traffic.
+
+### 🔄 Regular Updates
+- Regularly update your libraries and dependencies to ensure that you are protected from known vulnerabilities.
+- Check for firmware or software updates for your hardware components (e.g., ESP32) to ensure that you are using the latest, most secure version.
+
+### 🛡️ Vulnerability Testing
+- Regularly run vulnerability tests on your system to ensure no security flaws are present.
+- Implement logging and monitoring for any suspicious activity, including unauthorized access attempts or unusual behavior.
+
+By following these security practices, you can help ensure that your system remains secure and protected from potential threats.
