@@ -66,14 +66,9 @@
    - `MQ2`
    - `Adafruit INA219`
 
-2. **Clone this repo:**
-
-```bash
-git clone https://github.com/yourusername/smartgate-esp32.git
-
-
-
-
+     2. **Clone this repo:**
+        ```bash
+        git clone https://github.com/yourusername/smartgate-esp32.git
 
 ---
 
