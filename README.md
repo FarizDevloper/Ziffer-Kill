@@ -70,6 +70,46 @@
         ```bash
         git clone https://github.com/yourusername/smartgate-esp32.git
 
+Configure your credentials in the .ino file:
+
+cpp
+Copy
+Edit
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+#define BOT_TOKEN "YOUR_TELEGRAM_BOT_TOKEN"
+#define CHAT_ID "YOUR_TELEGRAM_CHAT_ID"
+Upload to ESP32 and wire up the components according to the schematic.
+
+🧠 Pin Mapping
+
+Component	ESP32 Pin
+PIR Sensor	GPIO 13
+MQ2 Sensor	GPIO 36
+INA219 (I2C)	GPIO 21/22
+Relay	GPIO 25
+RFID SS / RST	GPIO 5 / 17
+LED Hijau/Merah	GPIO 14 / 27
+Limit Switch	GPIO 32 / 33
+Lampu Lalin	GPIO 12 / 26
+💬 Telegram Commands
+
+Command	Function
+/start	Displays welcome/help text
+/buka	Opens the gate
+/tutup	Closes the gate
+/lampu_hijau	Turns on green lamp
+/lampu_merah	Turns on red lamp
+🧩 Ideas for Expansion
+🌐 Add web-based control interface
+
+☁️ Log activities to Firebase or Google Sheets
+
+📄 Export PDF reports of all gate events
+
+📡 Add GPS location to Telegram notifications
+
+
 ---
 
 ## 🌟 Support This Project 🌟
