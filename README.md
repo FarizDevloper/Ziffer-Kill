@@ -47,13 +47,6 @@
 | LED (R/G)     | Gate open/close indicators      |
 | Lampu Lalin   | Visual street light simulation  |
 
----
-
-## 📷 System Preview
-
-<p align="center">
-  <img src="https://your-image-link.com/prototype.jpg" width="600" alt="SmartGate Prototype"/>
-</p>
 
 ---
 
