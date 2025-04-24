@@ -1,63 +1,58 @@
-# 🚨 Smart Security Gate System with Telegram Integration
+# 🚪 SmartGate - Sistem Gerbang Otomatis Berbasis ESP32
 
-![Smart Gate System](https://www.example.com/your_image.jpg)
+![Smart Gate](https://www.example.com/gate_image.jpg)
 
-Sistem keamanan otomatis berbasis **ESP32** yang mampu membuka dan menutup pintu menggunakan **sensor gerak**, **sensor asap**, **sensor arus**, dan **RFID**. Seluruh sistem terhubung dengan **Telegram Bot**, memungkinkan kontrol **jarak jauh secara real-time** melalui perintah sederhana seperti membuka pintu atau mengatur lampu lalu lintas.
-
----
-
-## ✨ Fitur Unggulan
-
-- ✅ Deteksi gerakan (PIR)
-- 🚬 Deteksi asap (MQ2)
-- ⚡ Deteksi arus berlebih
-- 🪪 Akses kontrol dengan RFID
-- 🔁 Kontrol relay otomatis
-- 🚦 Lampu lalu lintas merah & hijau
-- 💬 Kontrol dari Telegram: `/buka`, `/tutup`, `/lampu_hijau`, `/lampu_merah`
-- 🔐 Keamanan pintu menggunakan limit switch
-- 📡 Terhubung ke internet via WiFi
+**SmartGate** adalah sistem gerbang otomatis cerdas berbasis **ESP32**, dikendalikan melalui **Telegram Bot**, dilengkapi dengan **sensor gerak (PIR)**, **sensor asap (MQ2)**, **sensor arus**, **RFID**, serta **lampu lalu lintas** untuk indikasi gerbang. Sistem ini cocok digunakan untuk rumah pintar, garasi otomatis, atau sistem keamanan industri.
 
 ---
 
-## 🔧 Hardware yang Dibutuhkan
+## ✨ Fitur Utama
 
-- ESP32 Dev Board
-- Sensor PIR
-- Sensor MQ2
-- Sensor Arus (ACS712 / INA219)
-- RFID RC522
-- Relay 1 Channel
-- LED (Merah & Hijau)
-- Limit Switch (x2)
-- Breadboard + Kabel Jumper
-
----
-
-## 🚀 Cara Instalasi
-
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username/smart-gate-system.git
-   
-Buka file .ino di Arduino IDE
-
-Masukkan informasi berikut:
-
-SSID & Password WiFi
-
-Bot Token & Chat ID Telegram
-
-Upload ke board ESP32 kamu
-
-Monitor via Serial Monitor (115200)
+- 🔐 **Kontrol Gerbang Otomatis** via Telegram (/buka, /tutup)
+- 🛂 **Otentikasi RFID** dengan MFRC522
+- 🚶 **Deteksi Gerakan** otomatis membuka gerbang
+- 💨 **Deteksi Asap & Overcurrent** untuk keamanan
+- 🚦 **Lampu Lalu Lintas Otomatis** (Merah & Hijau)
+- 💬 **Notifikasi Telegram Real-time**
+- 🔒 **Limit Switch** sebagai deteksi status buka/tutup gerbang
+- 🔧 Kode open-source, bisa dikustomisasi sesuai kebutuhan
 
 ---
 
-📱 Perintah Telegram
+## ⚙️ Teknologi & Komponen
 
-Perintah	Fungsi
-/buka	Membuka pintu secara otomatis
-/tutup	Menutup pintu otomatis
-/lampu_hijau	Menyalakan lampu hijau
-/lampu_merah	Menyalakan lampu merah
+| Komponen            | Fungsi                            |
+|---------------------|------------------------------------|
+| ESP32               | Mikrokontroler utama               |
+| MFRC522             | Pembaca kartu RFID                 |
+| Sensor PIR          | Deteksi gerakan                    |
+| Sensor MQ2          | Deteksi asap                       |
+| INA219 / ADC        | Deteksi arus listrik               |
+| Relay               | Kontrol gerbang otomatis           |
+| Limit Switch        | Posisi gerbang (terbuka/tertutup) |
+| LED & Lampu Lalin   | Indikasi status gerbang            |
+
+---
+
+## 🛠️ Instalasi
+
+1. **Siapkan Library:**
+   - WiFi
+   - SPI
+   - Wire
+   - MFRC522
+   - UniversalTelegramBot
+   - WiFiClientSecure
+   - ArduinoJson
+   - MQ2
+   - Adafruit INA219 *(opsional untuk arus)*
+
+2. **Upload ke ESP32** dengan Arduino IDE atau PlatformIO
+
+3. **Set Konfigurasi:**
+
+```cpp
+const char* ssid = "NAMA_WIFI";
+const char* password = "PASSWORD_WIFI";
+#define BOT_TOKEN "TOKEN_TELEGRAM_BOT";
+#define CHAT_ID "CHAT_ID_TELEGRAM";
