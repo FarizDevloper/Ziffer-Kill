@@ -39,3 +39,25 @@ Sistem keamanan otomatis berbasis **ESP32** yang mampu membuka dan menutup pintu
 1. Clone repository ini:
    ```bash
    git clone https://github.com/username/smart-gate-system.git
+   
+Buka file .ino di Arduino IDE
+
+Masukkan informasi berikut:
+
+SSID & Password WiFi
+
+Bot Token & Chat ID Telegram
+
+Upload ke board ESP32 kamu
+
+Monitor via Serial Monitor (115200)
+
+---
+
+📱 Perintah Telegram
+
+Perintah	Fungsi
+/buka	Membuka pintu secara otomatis
+/tutup	Menutup pintu otomatis
+/lampu_hijau	Menyalakan lampu hijau
+/lampu_merah	Menyalakan lampu merah
