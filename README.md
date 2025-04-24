@@ -119,7 +119,7 @@ If you want to contribute in other ways (like coding, bug fixes, or feature sugg
 
 ---
 
-![Thank You](https://user-images.githubusercontent.com/74038190/212897782-96581536-54a0-4b87-87b4-5e55f95e8a8b.gif)
+![Thank You](https://user-images.githubusercontent.com/74038190/212284094-e50ceae2-de86-4dd6-9f9c-a3ebcb3ede9e.gif)
 
 
 
