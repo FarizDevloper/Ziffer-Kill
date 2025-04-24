@@ -70,20 +70,37 @@
         ```bash
         git clone https://github.com/yourusername/smartgate-esp32.git
 
-🧠 Pin Mapping
+## 🧠 Pin Mapping
 
-Component | ESP32 Pin
-PIR Sensor | GPIO 13
-MQ2 Sensor | GPIO 36
-INA219 (I2C) | GPIO 21 / 22
-Relay (Gate) | GPIO 25
-RFID SS / RST | GPIO 5 / 17
-LED Hijau / Merah | GPIO 14 / 27
-Limit Switches | GPIO 32 / 33
-Lampu Lalin | GPIO 12 / 26
+| Component           | ESP32 Pin     |
+|---------------------|---------------|
+| PIR Sensor          | GPIO 13       |
+| MQ2 Sensor          | GPIO 36       |
+| INA219 (I2C)        | GPIO 21 / 22  |
+| Relay (Gate)        | GPIO 25       |
+| RFID SS / RST       | GPIO 5 / 17   |
+| LED Hijau / Merah   | GPIO 14 / 27  |
+| Limit Switches      | GPIO 32 / 33  |
+| Lampu Lalin         | GPIO 12 / 26  |
+
+## 💬 Telegram Commands
+
+| Command      | Function                          |
+|--------------|-----------------------------------|
+| /start       | Displays welcome text             |
+| /buka        | Opens the gate                    |
+| /tutup       | Closes the gate                   |
+| /lampu_hijau | Turns on green light              |
+| /lampu_merah | Turns on red light                |
+
+## 🧩 Ideas for Expansion
+
+- 🌐 Add a web-based control interface
+- ☁️ Log activities to Firebase or Google Sheets
+- 📄 Export gate logs as PDF reports
+- 📡 Add GPS-based Telegram alert messages
 
 
----
 
 ## 🌟 Support This Project 🌟
 
