@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?center=true&lines=🔐+Smart+Security+Gate+System;ESP32+Smart+IoT+Pintu+Otomatis;Telegram+Control+%7C+Sensor+PIR+%7C+RFID+%7C+PDF+Log&font=Fira+Code&pause=1000&color=58A6FF&center=true&width=1000&height=50">
+  <img src="https://github.com/user-attachments/assets/c69411e1-2df9-4d94-be2d-ed5590c26fd8">
 </p>
 
 <h1 align="center">🔐 SmartGate ESP32 IoT System</h1>
@@ -127,3 +127,15 @@ If you want to contribute in other ways (like coding, bug fixes, or feature sugg
 ---
 
 ![Thank You](https://user-images.githubusercontent.com/74038190/212897782-96581536-54a0-4b87-87b4-5e55f95e8a8b.gif)
+
+
+
+
+
+
+
+
+
+
+
+
